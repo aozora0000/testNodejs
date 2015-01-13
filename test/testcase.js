@@ -13,9 +13,9 @@ describe('Array', function(){
         it('redis connection',function() {
             setObj = { "status": 200, "message": "hogefuga" };
             client.set('key:test:0', JSON.stringify(setObj));
-            client.get('key:test;:0',function(err,getObj) {
+            client.get('key:test:0',function(err,getObj) {
                 if(err) return console.log(err);
-                assert.equal(setObj,getObj);
+                assert.deepEqual(setObj,JSON.parse(getObj));
             });
 
         });
