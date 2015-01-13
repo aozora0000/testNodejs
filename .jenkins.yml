@@ -3,4 +3,4 @@ steps:
     - name: npmインストール
       code: npm install
     - name: gulp起動
-      code: gulp test
+      code: ./node_modules/.bin/gulp test
