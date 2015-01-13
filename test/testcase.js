@@ -17,7 +17,6 @@ describe('Array', function(){
                 if(err) return console.log(err);
                 assert.deepEqual(setObj,JSON.parse(getObj));
             });
-
         });
     })
 })

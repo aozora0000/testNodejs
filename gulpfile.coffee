@@ -12,3 +12,5 @@ gulp.task "test", ->
         .pipe mocha(
             reporter: "mocha-jenkins-reporter"
         )
+        .once 'end', ->
+            process.exit();
