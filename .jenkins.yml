@@ -1,5 +1,10 @@
 container: aozora0000/jenkins-ci-node:latest
+links:
+    - name: redis
+      container: redis
 steps:
+    - name: env確認
+      code: env
     - name: npmインストール
       code: npm install
     - name: gulp起動

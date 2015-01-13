@@ -11,6 +11,7 @@
         "gulp-mocha": "*",
         "should": "*",
         "mocha-jenkins-reporter": "*",
-        "coffee-script": "*"
+        "coffee-script": "*",
+        "redis": "*"
     }
 }
