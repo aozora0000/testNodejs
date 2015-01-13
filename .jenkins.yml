@@ -1,0 +1,6 @@
+container: aozora0000/jenkins-ci-node:latest
+steps:
+    - name: npmインストール
+      code: npm install
+    - name: gulp起動
+      code: gulp test

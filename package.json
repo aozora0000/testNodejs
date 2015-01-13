@@ -1,0 +1,16 @@
+{
+    "name": "testapplication",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node app"
+    },
+    "dependencies": {
+        "gulp": "*",
+        "gulp-env": "*",
+        "gulp-mocha": "*",
+        "should": "*",
+        "mocha-jenkins-reporter": "*",
+        "coffee-script": "*"
+    }
+}
